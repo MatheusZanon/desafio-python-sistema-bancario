@@ -47,6 +47,15 @@ def gerar_extrato():
     print(f"\nSaldo Atual: R$ {saldo:.2f}")
     print("=======================================")
 
+def nova_conta():
+    print("criando nova conta")
+
+def listar_contas():
+    print("listando contas")
+
+def cadastrar_usuario():
+    print("cadastrando usuario")
+
 def main():
     while True:
         try:
@@ -60,6 +69,15 @@ def main():
                 
             elif opcao == 3:
                 gerar_extrato()
+
+            elif opcao == 4:
+                nova_conta()
+            
+            elif opcao == 5:
+                listar_contas()
+            
+            elif opcao == 6:
+                cadastrar_usuario()
 
             elif opcao == 0:
                 break
